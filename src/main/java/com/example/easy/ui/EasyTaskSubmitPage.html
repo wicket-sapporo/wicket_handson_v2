@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+
+	<p>
+		<strong>Submit your task</strong>
+	</p>
+	<form wicket:id="form">
+		<div>
+			<input type="text" wicket:id="task" />
+		</div>
+		<div>
+			<input type="submit" />
+		</div>
+	</form>
+
+	<p>
+		<strong>Your Tasks</strong>
+	</p>
+	<ul wicket:id="submitedTasks">
+		<li wicket:id="submitedTask"></li>
+	</ul>
+
+	<hr>
+	<div>
+		<a wicket:id="easyTaskRemovePage">Remove Tasks</a>
+	</div>
+
+</body>
+</html>
